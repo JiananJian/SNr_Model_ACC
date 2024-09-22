@@ -16,4 +16,7 @@ Step 1. Upload the source codes to "/jet/home/jjian/".
 Step 2. Run command line "./run.sh task4". It compiles task4.c and submits the job. 
 Step 3. The output is stored in "/ocean/projects/mth240008p/jjian".
 Step 4. Download the output files to the local folder.
-Step 5. Run "task4.m" in Matlab to visualize the data.
+Step 5. Run "task4.m" in Matlab to visualize the data and generate three binary files "g_HCN_*.bin". 
+Step 6. Upload "g_HCN_*bin" to "/jet/home/jjian/".
+Step 7. Compile "task5.c" witht he command line "nvc -acc -Minfo=accel -o task5v2.out task5v2.c".
+Step 8. Run command line "./run_task5.sh -GPe 0.1 -tau 5 -HCN den".
