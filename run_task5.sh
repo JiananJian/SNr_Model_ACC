@@ -1,5 +1,5 @@
 #!/bin/bash
-TASK_NAME=task5v2
+TASK_NAME=task5
 
 module load cuda/11.7.1
 
