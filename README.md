@@ -23,3 +23,21 @@ Step 8. Run command line "./run_task5.sh -GPe 0.1 -tau 5 -HCN den". This calcula
 Step 9. The outputs "task5_*.bin" are stored in "/ocean/projects/mth240008p/jjian".  
 Step 10. Download the output files to the local folder.  
 Step 11. Run "task5.m" in Matlab to visualize the data.  
+
+********************* task9 ****************
+task5 saves the entire first-spike PSTH timespike data. task9 does the same calculation but only saves the histogram counts.   
+Run "nvc -acc -Minfo=accel -o task9.out task9.c" to compile the program.  
+Run "./run_task9.sh -GPe 0.030476 -tau 8.384470 -HCN zero -o task9a1" to caluclate the first-spike PSTH.   
+The output is an array saved in "/ocean/projects/mth240008p/jjian/task9a1_c.bin".  
+The array has 101 elements. The first 100 elements are the histogram counts in each bin [0, 0.5], ..., to [49.5, 50]. The last element is the total number of trials. 
+  
+
+Run "task9_job.mat" in matlab. It generates a shell program "run_task9v3.sh".  
+Run "chmod +x run_task9v3.sh" to make it executable.  
+Run "./run_task9v3.sh" to caluclate a list of first-spike PSTH with parameters from "tau_values.m".   
+Download the files "/ocean/projects/mth240008p/jjian/task9a*_c.bin" to the local folder.   
+Run "task9.m" in matlab and save the data into matlab data format with the propriate name such as "GPe_den.m".     
+Edit line 2-4 of "task9_job.mat" for different experiment conditions, repeat the program and generate "GPe_den.m",  "GPe_som.m",  "GPe_zero.m", "Str_den.m",  "Str_som.m", and "Str_zero.m".  
+Run "task9p2.mat" in matlab and visualized the histograms.
+
+
