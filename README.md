@@ -24,7 +24,7 @@ Step 9. The outputs "task5_*.bin" are stored in "/ocean/projects/mth240008p/jjia
 Step 10. Download the output files to the local folder.  
 Step 11. Run "task5.m" in Matlab to visualize the data.  
 
-********************* task9 ****************
+********************* task9 ****************  
 task5 saves the entire first-spike PSTH timespike data. task9 does the same calculation but only saves the histogram counts.   
 Run "nvc -acc -Minfo=accel -o task9.out task9.c" to compile the program.  
 Run "./run_task9.sh -GPe 0.030476 -tau 8.384470 -HCN zero -o task9a1" to caluclate the first-spike PSTH.   
